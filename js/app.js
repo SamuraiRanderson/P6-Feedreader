@@ -7,6 +7,7 @@
  */
 
 // The names and URLs to all of the feeds we'd like available.
+
 var allFeeds = [
     {
         name: 'Udacity Blog',
@@ -27,8 +28,11 @@ var allFeeds = [
  * Reader API is loaded asynchonously and will then call this
  * function when the API is loaded.
  */
+
 function init() {
+
     // Load the first feed we've defined (index of 0).
+
     loadFeed(0);
 }
 
@@ -40,6 +44,7 @@ function init() {
  * This function all supports a callback as the second parameter
  * which will be called after everything has run successfully.
  */
+
 function loadFeed(id, cb) {
     var feedUrl = allFeeds[id].url,
         feedName = allFeeds[id].name,
@@ -49,6 +54,7 @@ function loadFeed(id, cb) {
      * Once the feed has been loaded, the callback function
      * is executed.
      */
+
     feed.load(function(result) {
         if (!result.error) {
             /* If loading the feed did not result in an error,
@@ -90,6 +96,7 @@ google.setOnLoadCallback(init);
  * place our code in the $() function to ensure it doesn't execute
  * until the DOM is ready.
  */
+
 $(function() {
     var container = $('.feed'),
         feedList = $('.feed-list'),
@@ -103,6 +110,7 @@ $(function() {
      * above using Handlebars) and append it to the list of all
      * available feeds within the menu.
      */
+
     allFeeds.forEach(function(feed) {
         feed.id = feedId;
         feedList.append(feedItemTemplate(feed));
@@ -114,6 +122,7 @@ $(function() {
      * the menu, load the feed, and prevent the default action
      * (following the link) from occuring.
      */
+
     feedList.on('click', 'a', function() {
         var item = $(this);
 
@@ -125,6 +134,7 @@ $(function() {
     /* When the menu icon is clicked on, we need to toggle a class
      * on the body to perform the hiding/showing of our menu.
      */
+
     menuIcon.on('click', function() {
         $('body').toggleClass('menu-hidden');
     });
