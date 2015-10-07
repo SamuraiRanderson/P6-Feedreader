@@ -8,3 +8,9 @@ The practice of scripting well written tests gives us the ability to analyze whe
 program will break the existing functionality without having to manually test all aspects of the code.
 
 You can view this project on it's GitHub Pages site [here](http://samurairanderson.github.io/P6-Feedreader/#).
+
+###Steps to run this application
+<li> Click the _"Clone in Desktop"_ or _"Download Zip"_ button on the right hand side of this page.
+<br>
+<li> Open "index.html" in your browser.
+<li> You will see the successful Jasmine.js specs at the bottom of the page.
