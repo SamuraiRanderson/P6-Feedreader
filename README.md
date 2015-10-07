@@ -1,4 +1,4 @@
-## Feed Reader Testing 
+## Feedreader Testing 
 This project focuses on _“test driven development”_ using a web-based application that reads RSS feeds. This was
 accomplished using [Jasmine](http://jasmine.github.io/) to write a number of tests against a pre-existing
 application to test the underlying business logic of the application, event handling, and DOM
