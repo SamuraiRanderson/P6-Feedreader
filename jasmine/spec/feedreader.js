@@ -47,7 +47,7 @@ $(function() {
          * and that the name is not empty.
          */
 
-         it('has a Name defined', function(){
+         it('has a Name defined', function() {
             var len = allFeeds.length;
             for (var i = 0; i < len; i++){
                 expect(allFeeds[i].name).toBeDefined();
@@ -57,7 +57,7 @@ $(function() {
 
     });
 
-    describe('The Menu', function(){
+    describe('The Menu', function() {
 
         var body = $('body');
 
@@ -107,35 +107,33 @@ $(function() {
 
     describe('New Feed Selection', function() {
 
+        var entry;
+        var newEntry;
+
         /* This is a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          */
 
-        beforeEach(function(done){
-        $('.feed').empty();
+        beforeEach(function(done) {
+            $('.feed').empty();
 
-        /* Checks the Udacity Feed first entry */
+        /* Checks the Udacity Feed first entry and the first entry
+         * for CSS Tricks
+         */
 
         loadFeed(0, function() {
             entry = $('.entry')[0].innerText;
-        });
-
-        /* Checks the CSS Tricks first entry */
-
-        loadFeed(1, function() {
-            newEntry = $('.entry')[0].innerText;
-            done();
+            loadFeed(1, function() {
+                newEntry = $('.entry')[0].innerText;
+                done();
+            });
         });
         });
 
-        /* Compares the first entry from the Udacity feed and the CSS
-         * Tricks feed to ensure that the content has has changed.
-         */
-
-        it('Actually changes when a new feed is loaded', function(done){
+        it('Actually changes when a new feed is loaded', function() {
             expect(entry).not.toEqual(newEntry);
-            done();
         });
 
-     });
+    });
+
 }());
