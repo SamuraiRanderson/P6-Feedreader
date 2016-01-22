@@ -1,4 +1,4 @@
-![Jasminejs image](https://github.com/SamuraiRanderson/P6-Feedreader/jasmine/lib/jasmine-2.1.2/jsamine.png)
+![Jasminejs image](https://github.com/SamuraiRanderson/P6-Feedreader/blob/master/jasmine/lib/jasmine-2.1.2/jsamine.png)
 
 ## Feedreader Testing 
 This project focuses on _“test driven development”_ using a web-based application that reads RSS feeds. This was
