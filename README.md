@@ -17,3 +17,5 @@ You can view this project on it's GitHub Pages site [**here**](http://samurairan
 <li> Open "index.html" in your browser.
 <li> You will see the successful Jasmine.js specs at the bottom of the page.
 <li> To review the tests located in  the [feedreader.js](https://github.com/SamuraiRanderson/P6-Feedreader/blob/master/jasmine/spec/feedreader.js) file.
+
+![Feed Reader Image](images/p6.png)
