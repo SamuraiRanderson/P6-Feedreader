@@ -24,4 +24,7 @@ Run index.html:
 
 The tests are available to view in the [feedreader.js](https://github.com/SamuraiRanderson/P6-Feedreader/blob/master/jasmine/spec/feedreader.js) file.
 
+###Demo:
+[Click Here](http://samurairanderson.github.io/P6-Feedreader/#)
+
 ![Feed Reader Image](images/p6.png)
